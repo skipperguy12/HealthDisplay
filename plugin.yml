@@ -1,0 +1,4 @@
+name: HealthDisplay
+main: com.github.skipperguy12.HealthDisplay.HealthDisplay
+version: .1
+description: HealthDisplay for nametags
