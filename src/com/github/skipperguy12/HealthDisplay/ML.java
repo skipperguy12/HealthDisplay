@@ -13,14 +13,15 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 public class ML implements Listener{
 	@EventHandler
 	public void onHit(EntityDamageByEntityEvent e){
-		Player p1 = (Player) e.getDamager();
-		HealthDisplay.health.put(p1.getName(), p1.getHealth());
-		ScoreboardManager.updateHealth(p1.getName());
+		
+
 		if(e.getEntity().getType().equals(EntityType.PLAYER)){
 			Player p = (Player) e.getEntity();
-		ScoreboardManager.updateHealth(p.getName());
+			HealthDisplay.health.put(p.getName(), p.getHealth());
+			ScoreboardManager.updateHealth(p.getName());
 		
-	}
+		}
+	
 	}
 	
 	@EventHandler
