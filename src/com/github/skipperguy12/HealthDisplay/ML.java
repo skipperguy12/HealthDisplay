@@ -1,6 +1,6 @@
 package com.github.skipperguy12.HealthDisplay;
 
-import net.minecraft.server.v1_5_R1.EntityPlayer;
+import net.minecraft.server.v1_5_R2.EntityPlayer;
 
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -14,10 +14,10 @@ public class ML implements Listener{
 	@EventHandler
 	public void onHit(EntityDamageByEntityEvent e){
 		Player p1 = (Player) e.getDamager();
-		ScoreboardManager.update(p1.getName(), "[H]: " + p1.getHealth() + "", "");
+		ScoreboardManager.updateHealth(p1.getName());
 		if(e.getEntity().getType().equals(EntityType.PLAYER)){
 			Player p = (Player) e.getEntity();
-		ScoreboardManager.update(p.getName(), "[H]: " + p.getHealth() + " ", "");
+		ScoreboardManager.updateHealth(p.getName());
 		
 	}
 	}
@@ -26,14 +26,14 @@ public class ML implements Listener{
 	public void respawn(PlayerRespawnEvent e){
 		
 			Player p1 = (Player) e.getPlayer();
-			ScoreboardManager.update(p1.getName(), "[H]: " + p1.getHealth() + " ", "");
+			ScoreboardManager.updateHealth(p1.getName());
 			
 	}
 	@EventHandler
 	public void join(PlayerJoinEvent e){
 		
 			Player p1 = (Player) e.getPlayer();
-			ScoreboardManager.update(p1.getName(), "[H]: " + p1.getHealth() + " ", "");
+			ScoreboardManager.setUpObjectives(p1);
 			
 	}
 	

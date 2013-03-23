@@ -11,7 +11,7 @@ public class HealthDisplay extends JavaPlugin{
 		
 		PluginManager pm = this.getServer().getPluginManager();
 		pm.registerEvents(new ML(), this);
-
+		ScoreboardManager.enableRegisterObjectives();
 		
 	}
 	
