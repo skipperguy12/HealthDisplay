@@ -1,20 +1,15 @@
 package com.github.skipperguy12.HealthDisplay;
 
-
-
-
-
-
-import net.minecraft.server.v1_5_R2.Packet;
-import net.minecraft.server.v1_5_R2.Packet206SetScoreboardObjective;
-import net.minecraft.server.v1_5_R2.Packet207SetScoreboardScore;
-import net.minecraft.server.v1_5_R2.Packet208SetScoreboardDisplayObjective;
-import net.minecraft.server.v1_5_R2.Scoreboard;
-import net.minecraft.server.v1_5_R2.ScoreboardBaseCriteria;
-import net.minecraft.server.v1_5_R2.ScoreboardScore;
+import net.minecraft.server.v1_5_R3.Packet;
+import net.minecraft.server.v1_5_R3.Packet206SetScoreboardObjective;
+import net.minecraft.server.v1_5_R3.Packet207SetScoreboardScore;
+import net.minecraft.server.v1_5_R3.Packet208SetScoreboardDisplayObjective;
+import net.minecraft.server.v1_5_R3.Scoreboard;
+import net.minecraft.server.v1_5_R3.ScoreboardBaseCriteria;
+import net.minecraft.server.v1_5_R3.ScoreboardScore;
 
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_5_R2.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_5_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 
